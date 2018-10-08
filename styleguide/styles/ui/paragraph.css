@@ -1,0 +1,17 @@
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  margin: var(--offset-md) 0;
+
+  a {
+    text-decoration: none;
+    color: var(--color-brand-dark);
+    border-bottom: 0.125rem solid var(--color-neutral-40);
+
+    &:hover,
+    &:focus {
+      border-bottom-color: var(--color-brand-red)
+    }
+  }
+}

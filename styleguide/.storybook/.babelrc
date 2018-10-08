@@ -1,0 +1,17 @@
+{
+  "presets": ["env", "stage-0", "vue"],
+  "env": {
+    "test": {
+      "plugins": ["require-context-hook"]
+    },
+    "plugins": [
+      "emotion",
+      "babel-plugin-macros",
+      ["transform-runtime", {
+        "polyfill": false,
+        "regenerator": true
+      }],
+      "transform-vue-jsx"
+    ]
+  }
+}

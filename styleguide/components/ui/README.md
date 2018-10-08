@@ -1,0 +1,3 @@
+# UI components
+
+These components are the smallest building blocks of the application. Like buttons, lists, titles, ...

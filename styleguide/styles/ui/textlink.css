@@ -1,0 +1,53 @@
+.textlink {
+  font-size: var(--font-size-12);
+  letter-spacing: var(--letter-spacing-lg);
+  font-weight: var(--font-default-weight-thick);
+  text-transform: uppercase;
+  color: var(--color-brand-white);
+  text-decoration: none;
+  display: inline-block;
+
+  margin: 0;
+  padding: 0 0 var(--offset-xs);
+
+  &--big {
+    font-size: var(--font-size-14);
+  }
+
+  &--underline {
+    border-bottom: 0.125rem solid var(--color-brand-white);
+  }
+
+  &--underline-theme-cs {
+    border-bottom: 0.125rem solid var(--color-theme-cs);
+  }
+
+  &--underline-theme-af {
+    border-bottom: 0.125rem solid var(--color-theme-af);
+  }
+
+  &--faded {
+    opacity: 0.4;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+  }
+
+  &--red {
+    color: var(--color-brand-red);
+
+    &:hover,
+    &:focus {
+      color: var(--color-brand-white);
+    }
+  }
+
+  &--underline-on-hover {
+    &:hover,
+    &:focus {
+      border-bottom: 0.125rem solid var(--color-brand-white);
+    }
+  }
+}

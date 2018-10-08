@@ -1,0 +1,114 @@
+.button {
+  font-weight: var(--font-default-weight-thick);
+  font-size: var(--font-size-14);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: var(--letter-spacing-lg);
+
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 var(--offset-md);
+  min-width: 10rem;
+
+  height: 3rem;
+  line-height: 3rem;
+
+  border: 2px solid transparent;
+  background-color: transparent;
+
+  cursor: default;
+
+  transition: background-color var(--transition-duration) ease-out, border-color var(--transition-duration) ease-out;
+
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+
+  &[disabled]{
+    opacity: var(--disabled-opacity);
+  }
+
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
+    transition: none;
+  }
+
+  &--color-dark {
+    color: var(--color-brand-dark);
+    border-color: var(--color-brand-dark);
+  }
+
+  &--fill&--color-dark {
+    background-color: var(--color-brand-dark);
+  }
+
+  &--color-red {
+    color: var(--color-brand-red);
+    border-color: var(--color-brand-red);
+  }
+
+  &--fill&--color-red {
+    background-color: var(--color-brand-red);
+  }
+
+  &--color-mint {
+    color: var(--color-brand-mint);
+    border-color: var(--color-brand-mint);
+  }
+
+  &--fill&--color-mint {
+    background-color: var(--color-brand-mint);
+  }
+
+  &--color-white {
+    color: var(--color-brand-white);
+    border-color: var(--color-brand-white);
+  }
+
+  &--fill&--color-white {
+    background-color: var(--color-brand-white);
+  }
+
+  &--fill {
+    color: var(--color-brand-white);
+  }
+
+  &--rounded {
+    border-radius: var(--border-radius-default);
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--small {
+    height: 1.3125rem;
+    line-height: 1.3125rem;
+    padding: 0 var(--offset-xs);
+    min-width: 0;
+    font-weight: var(--font-default-weight-normal);
+    font-size: var(--font-size-12);
+    border-width: 0.0625rem;
+  }
+
+  &--color-dark:not([disabled]) {
+    &:hover,
+    &:focus {
+      color: var(--color-brand-dark);
+      background-color: var(--color-neutral-20);
+      border-color: var(--color-neutral-20);
+    }
+  }
+
+  &--color-white,
+  &--color-red,
+  &--color-mint {
+    &:hover:not([disabled]),
+    &:focus:not([disabled]) {
+      color: var(--color-brand-white);
+      background-color: var(--color-brand-dark);
+      border-color: var(--color-brand-dark);
+    }
+  }
+}

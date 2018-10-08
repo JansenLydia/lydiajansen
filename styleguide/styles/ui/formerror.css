@@ -1,0 +1,8 @@
+.formerror {
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-14);
+  color: var(--color-brand-red);
+
+  display: block;
+  margin-top: var(--offset-xs);
+}

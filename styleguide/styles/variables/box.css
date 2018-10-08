@@ -1,0 +1,11 @@
+:root {
+  --border-radius-default: 2px;
+
+  --offset-xs: 0.3125rem;
+  --offset-sm: 0.625rem;
+  --offset-md: 1rem;
+  --offset-default: 1.875rem;
+  --offset-lg: 3.75rem;
+  --offset-xl: 5.625rem;
+  --offset-xxl: 7.5rem;
+}

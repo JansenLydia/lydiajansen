@@ -1,0 +1,8 @@
+.label {
+  display: inline;
+
+  &--block {
+    display: block;
+    margin: var(--offset-md) 0 var(--offset-sm) 0;
+  }
+}

@@ -1,0 +1,6 @@
+ul,
+ol {
+  margin: var(--offset-md) 0;
+  line-height: var(--line-height-16);
+}
+

@@ -1,0 +1,12 @@
+.checkbox {
+  margin-right: var(--offset-sm);
+  position: relative;
+  top: -0.0625rem;
+  margin-bottom: var(--offset-xs);
+
+  input {
+    &[disabled]{
+      opacity: var(--disabled-opacity);
+    }
+  }
+}

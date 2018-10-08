@@ -1,0 +1,28 @@
+.textinput {
+  font-family: var(--font-default);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-default-weight-normal);
+  line-height: var(--line-height-16);
+  color: var(--color-brand-dark);
+  letter-spacing: 0.03125rem;
+
+  padding: var(--offset-sm) var(--offset-md);
+  border: 2px solid var(--color-neutral-20);
+  outline: none;
+  display: block;
+  resize: none;
+  width: 100%;
+
+  &[disabled] {
+    opacity: var(--disabled-opacity);
+    background-color: var(--color-neutral-10);
+  }
+
+  &:focus:not([disabled]) {
+    border-color: var(--color-neutral-40);
+  }
+
+  &::placeholder {
+    color: var(--color-neutral-30);
+  }
+}

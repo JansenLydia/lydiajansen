@@ -1,0 +1,9 @@
+.dropdown {
+  margin-bottom: var(--offset-sm);
+  width: 100%;
+  display: block;
+
+  &[disabled] {
+    opacity: var(--disabled-opacity);
+  }
+}
